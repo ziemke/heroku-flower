@@ -1,1 +1,1 @@
-web: flower --port=$PORT --broker="$BROKER_URL"
+web: flower --port=$PORT --broker="$BROKER_URL?ssl=true" --broker_api="$BROKER_API" --tasks_columns=name,uuid,state,retries,args,received,started, runtime,worker,exception,eta
